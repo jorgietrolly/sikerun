@@ -1,0 +1,79 @@
+body{
+	background-image: url(../png/sikeBack.png);
+	background-size:  10%;
+	background-color: black;
+	margin: 0;
+}
+
+#header{
+	width: 100%;
+	text-align: right;
+	margin-left: -30%;
+
+}
+
+img{
+	display: inline-block;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.Twitter{
+
+	position: absolute;
+	top: 120%;
+	left: 67%;
+	width: 10px%;
+	height: 15px%;
+	
+}
+
+.discord{
+	position: absolute;
+	background: transparent;
+	top: 120% ;
+	left: 52.3%;
+	width: 10px%;
+	height: 15px%;
+
+}
+
+.twitch{
+	position:  absolute;
+	top: 120%;
+	left: 23%;
+	width: 10px%;
+	height: 15px%;
+
+}
+
+.youtube{
+	position: absolute;
+	top: 120%;
+	left: 35%;
+	width: -10px%;
+	height: 15px%;
+}
+
+.twitterborder {
+width:30%;
+height:500px;
+margin-top:50px;
+margin-right:54.5%;
+background:#707070;
+float: right;
+}
+
+.youtubeborder{
+width:29%;
+height:500px;
+margin-top:-500px;
+margin-right:25%;
+background:#707070;
+float: right;
+
+}
+
+
+
+
