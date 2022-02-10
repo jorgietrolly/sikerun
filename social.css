@@ -1,0 +1,92 @@
+body{
+	background-image: url(png/sikeBack.png);
+	background-size:  10%;
+	background-color: black;
+	margin: 0;
+}
+.twitter{
+
+	position: absolute;
+	top: 40%;
+	left: 71%;
+	width: 10px%;
+	height: 15px%;
+	opacity: 0.5;
+	
+}
+.twitter:hover{
+	opacity: 1.0;
+}
+.discord{
+	position: absolute;
+	background: transparent;
+	top: 40% ;
+	left: 52.3%;
+	width: 10px%;
+	height: 15px%;
+	opacity: 0.5;
+
+}
+.discord:hover{
+	opacity: 1.0;
+}
+
+.twitch{
+	position:  absolute;
+	top: 40%;
+	left: 16.5%;
+	width: 10px%;
+	height: 15px%;
+	opacity: 0.5;
+
+}
+.twitch:hover{
+	opacity: 1.0;
+}
+
+.youtube{
+	position: absolute;
+	top: 40%;
+	left: 32%;
+	width: 300px;
+	height: 224.5px;
+	opacity: 0.5;
+}
+.youtube:hover{
+	opacity: 1.0;
+}
+.topnav {
+	
+	overflow: hidden;
+}
+.topnav a{
+
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 200px;
+
+
+}
+.topnav a:hover{
+	background-color: #ddd ;
+	color: black;
+}
+
+.topnav a.active{
+	background-color: #04AA6D;
+	color: white;
+}
+.topnav{
+	background-image: url(png/follow.png);
+	max-height: 40px;
+}
+
+.follow{
+	width: 400px;
+	height: 400px;
+	margin-left: 35%;
+}
+
