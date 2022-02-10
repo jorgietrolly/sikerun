@@ -1,1 +1,59 @@
-<h1>Hello!</h1>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>SIKEMONEYTEAM</title>
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+<div id="site">
+
+    <div id="header">
+        <img class="center" src="png/header.png"/>
+        <a href="https://twitter.com/eliopdagod?lang=en" target="_blank">
+        	<img alt="https://twitter.com/eliopdagod?lang=en" src="png/twitter.png" class="Twitter"/>
+
+      <a href="https://discord.gg/SbckY22c" target="_blank">
+      	<img alt="https://discord.gg/SbckY22c" src="png/discord.png" class="discord">
+
+      	<a href="https://www.twitch.tv/eliop14" target="_blank" >
+      		<img alt="https://www.twitch.tv/eliop14" src="png/twitch.png" class="twitch">
+        
+        <a href="https://www.youtube.com/channel/UCw4QwTrz2fRg6yCnNOwPomw" target="_blank">
+        	<img alt="https://www.youtube.com/channel/UCw4QwTrz2fRg6yCnNOwPomw" src="png/youtube.png" class="youtube">
+        
+    </div>    
+
+</div>
+<div class="twitterborder">
+	<a class="twitter-timeline" data-width="500" data-height="500" data-theme="dark" href="https://twitter.com/eliopdagod?ref_src=twsrc%5Etfw">Tweets by eliopdagod</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="youtubeborder">
+	<iframe class="latestVideoEmbed" vnum='0' cid="UCw4QwTrz2fRg6yCnNOwPomw" width="600" height="500" frameborder="0" allowfullscreen></iframe>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+function loadVideo(iframe) {
+  $.getJSON(reqURL + iframe.getAttribute('cid'),
+    function(data) {
+      var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+      console.log(videoNumber);
+      var link = data.items[videoNumber].link;
+      id = link.substr(link.indexOf("=") + 1);
+      iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+    }
+  );
+}
+var iframes = document.getElementsByClassName('latestVideoEmbed');
+for (var i = 0, len = iframes.length; i < len; i++) {
+  loadVideo(iframes[i]);
+}
+</script>
+</div>
+
+
+</body>
+</html>
